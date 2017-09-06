@@ -1,0 +1,19 @@
+﻿source https://nuget.org/api/v2
+nuget FubuMVC.Core == 3.0.0.2223-alpha
+nuget FubuCore
+nuget HtmlTags
+nuget RhinoMocks
+nuget structuremap == 4.0.0.315
+nuget FubuMVC.Spark == 3.0.0.2223-alpha
+nuget spark == 1.8.0.0
+nuget NUnit
+nuget FubuMVC.RavenDb == 3.0.0.2223-alpha
+nuget RavenDB.Client == 2.5.2750
+nuget RavenDB.Database 2.5.2750
+nuget RavenDB.Embedded 2.5.2750
+nuget RavenDB.Server 2.5.2750
+nuget structuremap.automocking == 4.0.0.315
+ 
+ 
+source https://www.myget.org/F/fubumvc-edge
+nuget FubuTestingSupport == 2.0.0.291

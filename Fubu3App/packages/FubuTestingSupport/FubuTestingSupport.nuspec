@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>FubuTestingSupport</id>
+    <version>2.0.0.291</version>
+    <authors>Chad Myers, Jeremy D. Miller, Joshua Flanagan</authors>
+    <owners>Jeremy D. Miller</owners>
+    <licenseUrl>https://github.com/DarthFubuMVC/fubucore/raw/master/license.txt</licenseUrl>
+    <projectUrl>http://core.fubu-project.org</projectUrl>
+    <iconUrl>https://github.com/DarthFubuMVC/fubu-collateral/raw/master/Icons/FubuCore_256.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Specification extensions and automocking utilities for interaction tests.</description>
+    <tags>utilities, testing, fubu</tags>
+    <dependencies>
+      <dependency id="FubuCore" />
+      <dependency id="NUnit" version="[2.6.3]" />
+      <dependency id="NUnit.Runners" version="[2.6.3]" />
+      <dependency id="RhinoMocks" version="3.6.1" />
+      <dependency id="structuremap" version="3.0" />
+      <dependency id="structuremap.automocking" version="3.0" />
+    </dependencies>
+  </metadata>
+</package>

@@ -1,0 +1,3 @@
+﻿<viewdata model="Fubu3App.Endpoints.TimeViewModel"/>
+
+<h1>It is: ${Model.Time}</h1>

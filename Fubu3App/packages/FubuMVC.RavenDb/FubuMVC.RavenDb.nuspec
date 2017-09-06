@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
+  <metadata>
+    <id>FubuMVC.RavenDb</id>
+    <version>3.0.0.2223-alpha</version>
+    <authors>Jeremy Miller, et al.</authors>
+    <owners>Jeremy Miller, Joshua Arnold</owners>
+    <licenseUrl>https://github.com/DarthFubuMVC/fubumvc/raw/master/license.txt</licenseUrl>
+    <projectUrl>http://github.com/DarthFubuMVC/fubumvc</projectUrl>
+    <iconUrl>https://github.com/DarthFubuMVC/fubu-collateral/raw/master/Icons/FubuMvc_256.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Drop in persistence with RavenDb for FubuMVC / StructureMap applications</description>
+    <tags>fubu persistence fubumvc ravendb</tags>
+    <dependencies>
+      <dependency id="FubuCore" version="0.9.9.180" />
+      <dependency id="FubuMVC.Core" version="3.0" />
+      <dependency id="structuremap" version="4.0" />
+      <dependency id="RavenDB.Client" version="[2.5.2750]" />
+      <dependency id="RavenDB.Database" version="[2.5.2750]" />
+      <dependency id="RavenDB.Embedded" version="[2.5.2750]" />
+    </dependencies>
+  </metadata>
+</package>

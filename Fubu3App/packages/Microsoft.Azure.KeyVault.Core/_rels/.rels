@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">
+    <Relationship Type="http://schemas.microsoft.com/packaging/2010/07/manifest" Target="/Microsoft.Azure.KeyVault.Core.nuspec" Id="Rd70a15f6f87543fa" />
+</Relationships>

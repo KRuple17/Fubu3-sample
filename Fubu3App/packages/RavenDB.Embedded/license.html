@@ -1,0 +1,370 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+
+<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#9d033a">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#9d033a">
+
+<meta name="msapplication-tap-highlight" content="no" />
+<title>RavenDB - the open source NoSQL database for .NET</title>
+<link href='//fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic' rel='stylesheet' type='text/css'>
+<link href="/Content/css/bundle?v=ZlFRdPrLgcZyog9HSSUtC-hBhPwFxHtb5kUQVLRJ2Cw1" rel="stylesheet"/>
+
+    
+</head>
+<body class="push-body">
+<div id="menuOverlay"></div>
+<div id="wrapper">
+<nav class="navbar">
+    <a class="logo" href="/">RavenDB</a>
+	<a href="/cart" id="shoppingCartIndicator" class="cart" data-bind="visible: getTotalItems() > 0" style="display: none;">
+		<span class="hidden-xs">CART</span> <span class="count" data-bind="text: getTotalItems()"></span>
+	</a>
+    <a id="menu-button">Show/Hide Menu</a>
+    <div class="container">
+        <nav class="topmenu">
+            <a href="/features">Features</a>
+            <a href="/downloads">Download</a>
+            <a href="/support">Support</a>
+            <a class="active" href="/buy">Buy</a>
+            <div class="btn-group">
+                <a href="http://demo.ravendb.net/" target="_blank" class="highlight">Try it!</a>
+                <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="caret"></span>
+                    <span class="sr-only">Toggle Dropdown</span>
+                </button>
+				<ul class="dropdown-menu">
+				    <li>
+				        <a href="/docs/article-page/3.0/csharp/start/getting-started">
+				            <img src="/content/img/adv_getting-started.svg"/>
+				            Getting started
+				        </a>
+				    </li>
+                    <li>
+                        <a href="http://live-test.ravendb.net/" target="_blank">
+                            <img src="/content/img/adv_extensible.svg" height="71" />
+                            Playground Studio
+                        </a>
+                    </li>
+				    <li>
+				        <a href="/docs/article-page/3.0/csharp/start/playground-server">
+				            <img src="/content/img/adv_playground-server.svg" height="71"/>
+				            Playground Server
+				        </a>
+				    </li>
+				</ul>
+            </div>
+        </nav>
+    </div>
+</nav>
+	<nav id="submenu">
+		<a href="/">Home</a>
+		<a href="/learn">Learn</a>
+	    <a href="/docs">Documentation</a>
+        <a href="/events">Events</a>
+		<a href="/testimonials">Testimonials</a>
+		<a href="/company">Company</a>
+		<a href="/team">Team</a>
+		<a href="/comics">Comics</a>
+		<a href="/contact">Contact us</a>
+	</nav>
+	<article class="container">
+		
+
+<div id="buy-page" class="raven-page">
+	<div class="row flexbox buy">
+		<div id="standard" class="col-sm-6">
+			<div class="bg-dark padding flexbox-item">
+				<h2 class="text-center">Standard</h2>
+				<hr />
+				<p class="text-right-sm lead">
+					A powerful RavenDB instance<br />
+					for professional projects
+				</p>
+				<div class="text-center-xs">
+					<div class="price">
+						<span class="currency">$</span><span data-bind="text: standardPerYearPrice"></span><span class="interval">year</span>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-lg-5">
+
+						<a href="/cart" data-bind="click: addStandardToCart" class="btn btn-info square">Buy</a>
+					</div>
+					<div class="col-xs-12 col-lg-7">
+
+						<ul class="feature-list text-right-sm">
+							<li>12GB RAM</li>
+							<li>6 CPU cores</li>
+							<li>Unlimited databases</li>
+							<li>Unlimited database size</li>
+							<li>RavenFS</li>
+							<li>Periodic Backup</li>
+							<li>Sharding</li>
+							<li>Expiration</li>
+							<li>Replication</li>
+							<li>SQL Replication</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="enterprise" class="col-sm-6">
+			<div class="bg-dark padding flexbox-item">
+				<h2 class="text-center">Enterprise</h2>
+				<hr />
+
+
+				<p class="lead">
+					RavenDB unleashed. The full power of RavenDB<br />
+					for enterprise and mission-critical projects
+				</p>
+				<div class="text-right-sm text-center-xs">
+					<div class="price">
+						<span class="currency">$</span><span data-bind="text: enterprisePerYearPrice.toLocaleString()"></span><span class="interval">year</span>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-lg-5 pull-right-sm">
+						<a href="/cart" data-bind="click: addEnterpriseToCart" class="btn btn-info square">
+							Buy
+						</a>
+						<div class="btn-group">
+							<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<span data-bind="text: selectedCores"></span> CORES <span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu">
+								<!-- ko foreach: coreOptions -->
+								<li>
+									<a data-bind="text: $data, click: function() { $root.selectedCores = $data; }"></a>
+								</li>
+								<!-- /ko -->
+							</ul>
+						</div>
+					</div>
+					<div class="col-xs-12 col-lg-7">
+
+						<ul class="feature-list">
+							<li><strong>Unlimited</strong> RAM</li>
+							<li><strong>Up to 128 CPU</strong> cores</li>
+							<li>Unlimited databases</li>
+							<li>Unlimited database size</li>
+							<li>RavenFS</li>
+							<li>Periodic Backup</li>
+							<li>Sharding</li>
+							<li>Expiration</li>
+							<li>Replication</li>
+							<li>SQL Replication</li>
+							<li><strong>Encryption</strong></li>
+							<li><strong>Compression</strong></li>
+							<li><strong>FIPS Compliance</strong></li>
+							<li><strong>Quotas</strong></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="row flexbox buy">
+		<div id="basic" class="col-sm-6">
+			<div class="bg-dark padding flexbox-item">
+				<h2 class="text-center">Basic</h2>
+				<hr />
+				<p class="text-right-sm lead">
+					Essential capabilities to get started
+				</p>
+				<div class="text-center-xs">
+					<div class="price">
+						<span class="currency">$</span><span data-bind="text: basicPrice"></span><span class="interval">mo</span>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-lg-5">
+						<p class="text-center">For each instance</p>
+						<a href="/cart" data-bind="click: addBasicToCart" class="btn btn-info square">Buy</a>
+						<div class="btn-group">
+							<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<span data-bind="text: selectedBasicOption"></span> <span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu">
+								<!-- ko foreach: basicOptions -->
+								<li>
+									<a data-bind="text: $data, click: function() { $root.selectedBasicOption = $data; }"></a>
+								</li>
+								<!-- /ko -->
+							</ul>
+						</div>
+					</div>
+					<div class="col-xs-12 col-lg-7">
+
+						<ul class="feature-list text-right-sm">
+							<li><span data-bind="text: basicMaxRam"></span> RAM</li>
+							<li><span data-bind="text: basicMaxCores"></span> CPU core</li>
+							<li><span data-bind="text: basicDatabases"></span> databases</li>
+							<li><span data-bind="text: basicDatabaseSize"></span> database size</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="isv" class="col-sm-6">
+			<div class="bg-dark padding flexbox-item">
+				<h2 class="text-center">ISV</h2>
+				<hr />
+
+
+				<p class="lead">
+					Royalty-free redistribution of RavenDB*
+				</p>
+				<div class="text-right-sm text-center-xs">
+					<div class="price">
+						<span class="currency">$</span><span data-bind="text: isvPrice"></span><span class="interval">year</span>
+					</div>
+				</div>
+			    <div class="row">
+			        <div class="col-xs-12 col-lg-5 pull-right-sm">
+			            <p class="text-center">For each developer</p>
+			            <a href="/cart" class="btn btn-info square" data-bind="click: addIsvToCart">Buy</a>
+			            <div class="btn-group">
+			                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			                    <span data-bind="text: selectedIsvOption"></span> <span class="caret"></span>
+			                </button>
+			                <ul class="dropdown-menu">
+			                    <!-- ko foreach: isvOptions -->
+			                    <li>
+			                        <a data-bind="text: $data, click: function() { $root.selectedIsvOption = $data; }"></a>
+			                    </li>
+			                    <!-- /ko -->
+			                </ul>
+			            </div>
+			        </div>
+			        <div class="col-xs-12 col-lg-7">
+
+			            <ul class="feature-list">
+			                <li><strong data-bind="text: isvMaxRam"></strong> RAM</li>
+			                <li><strong data-bind="text: isvMaxCores"></strong> CPU cores</li>
+			                <li><strong>Unlimited</strong> databases</li>
+			                <li><strong>Unlimited</strong> database size</li>
+			                <li>RavenFS</li>
+			                <li>Periodic Backup</li>
+			                <li>Expiration</li>
+			                <li>Replication</li>
+			                <li>Versioning</li>
+			            </ul>
+			        </div>
+			    </div>
+			    <div class="row">
+			        <div class="col-xs-12">
+			            <ul class="details">
+			                <li>
+			                    Only for deployments outside your organization
+			                </li>
+			                <li>
+			                    Only a single instance can be deployed for the same application
+			                </li>
+			            </ul>
+			        </div>
+			    </div>
+			</div>
+		</div>
+	</div>
+	<div class="row flexbox">
+		<div class="col-sm-6 col-lg-3 flexbox-item">
+			<div class="bg-gray">
+				<p class="lead">Not sure?</p> <a href="/buy/planner" class="btn btn-primary btn-block">Try our Capacity Planner</a>
+			</div>
+		</div>
+		<div class="col-sm-6 col-lg-3 flexbox-item">
+			<div class="bg-gray">
+				<p class="lead">Open source?</p><a href="/contact" class="btn btn-primary btn-block">Contact us for a FREE license</a>
+			</div>
+		</div>
+		<div class="col-sm-6 col-lg-3 flexbox-item">
+			<div class="bg-gray">
+				<p class="lead">Looking for a hosted option?</p> <a href="http://ravenhq.com/" class="btn btn-primary btn-block" target="_blank">Try RavenHQ</a>
+			</div>
+		</div>
+		<div class="col-sm-6 col-lg-3 flexbox-item">
+			<div class="bg-gray"><p class="lead">BizSpark startup?</p> <a href="/contact" class="btn btn-primary btn-block">Contact us for a discount</a></div>
+		</div>
+	</div>
+</div>
+	</article>
+<footer>
+	<div class="footer-container">
+		<div class="row text-center">
+			<div class="col-sm-7 text-left-sm">
+				<p class="lead">Connect with us!</p>
+				<div class="connect"> <a href="https://www.facebook.com/pages/RavenDB/265907650186374" class="facebook">Facebook</a> <a href="https://plus.google.com/communities/112242341438716210743" class="google">Google+</a> <a href="https://twitter.com/ravendb" class="twitter">Twitter</a> <a href="https://www.linkedin.com/groups/RavenDB-4499263" class="linkedin">LinkedIn</a> </div>
+			</div>
+			<div class="col-sm-5 text-right-sm">
+				<div class="copyright">
+					<span class="nobr">Copyright © 2015 Hibernating Rhinos.</span> <span class="nobr">All rights reserved</span><br />
+					<a href="/terms">Terms of Use</a> // <a href="/privacy-policy">Privacy Policy</a> // <a href="/media">Media</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+</div>
+<script src="/js/libs?v=eiiqlNRSzurP1IU3PdyRJ6T5v4so6nSEsIu1S_sxxSg1"></script>
+
+<script>
+	var root = '/';
+</script>
+<script src="/js/app?v=c8b6jOEUpe7ZV61CUTtkKMyxVQgah4b0arXz7WsEL781"></script>
+
+<script src="/js/shared?v=Yk3ocj5K2ogZr38Tx2hyenvQhe7dvaq2Gn7MATblVF81"></script>
+
+
+	<script type="text/javascript">
+		ko.applyBindings(new BuyViewModel(), document.getElementById("buy-page"));
+	</script>
+
+<script>
+	(function (i, s, o, g, r, a, m) {
+		i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+			(i[r].q = i[r].q || []).push(arguments)
+		}, i[r].l = 1 * new Date(); a = s.createElement(o),
+			m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+	})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+	ga('create', 'UA-23458527-1', 'auto');
+	ga('send', 'pageview');
+</script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        var downloader = utils.readCookie('download_ravendb');
+        if (downloader) {
+            leads.updateDownloaderVisit(document.URL, downloader);
+        }
+    });
+</script>
+
+
+</body>
+</html>
+

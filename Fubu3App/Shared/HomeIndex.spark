@@ -1,0 +1,18 @@
+﻿<viewdata model="Fubu3App.Endpoints.HomeViewModel" />
+ 
+<h1>!{ Model.Text }</h1>
+<div>
+  <h2>Links!</h2>
+  <ul>
+    <li>${this.LinkTo<HomeEndpoint>(x => x.LinkAction()).Text("Link!")}</li>
+  </ul>
+  <ul>
+    <li>${this.LinkTo<HomeEndpoint>(x => x.get_Time()).Text("What time is it?!")}</li>
+  </ul>
+  <!--<form method="GET" url="/home/Time">
+    <input type="submit" value="What Time is it?"/>
+  </form>-->
+  <!--<button value="What Time is it?">
+    ${this.LinkTo<HomeEndpoint>(x => x.get_Time())}
+  </button>-->
+</div>

@@ -1,0 +1,5 @@
+﻿<viewdata model="Fubu3App.Endpoints.LinkViewModel" />
+
+<h3>Wubba Dub Dub</h3>
+<p>Number: ${Model.Number}</p>
+<p>${Model.Text}</p>
